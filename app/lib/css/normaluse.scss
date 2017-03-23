@@ -1,0 +1,22 @@
+a {
+	text-decoration: none;
+	color: #aaa;
+	&:hover {
+		color: #f55;
+	}
+}
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.l {
+	float: left;
+}
+
+.r {
+	float: right;
+}
+
+

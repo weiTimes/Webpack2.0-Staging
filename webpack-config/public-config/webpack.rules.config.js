@@ -1,6 +1,7 @@
 /**
  * 定义了loader
  */
+const autoprefixer = require('autoprefixer');
 
 const rules = {
   rules: [{

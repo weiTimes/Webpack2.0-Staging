@@ -1,3 +1,7 @@
+/**
+ * 开发环境配置
+ */
+
 const path = require('path');
 // 目录路径配置
 const constConfig = require('./webpack-config/public-config/webpack.const.config.js');

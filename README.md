@@ -1,5 +1,15 @@
 # ZNC - 基于Webpack2.0的多页应用架构
 
+## What support?
+
+* ES6语法
+* SASS预编译
+* 字体、图片等资源的打包
+* 可扩展第三方库
+* 模板的打包生成
+* 支持多页的可持续集成
+* 支持导入和打包公共的Html, 包含行为(JS)和表现(SCSS)
+
 ## How to use?
 
 ````
@@ -16,7 +26,7 @@
   npm run build
 ````
 
-## Catogory Structrue
+## Category Structrue
 ````
 # app 开发目录
 # app/lib 公共库
@@ -35,7 +45,7 @@
 
 ## What you need care?
 
-* **/htmls 放的是所有出首页外的子页, **/js 放的是所有子页的入口，他们除后缀名之后字符串外字符串必须相等，否则无法打包到一起
+* **/htmls 放的是所有除首页外的子页, **/js 放的是所有子页的入口，他们除后缀名之后字符串外字符串必须相等，否则无法打包到一起
 
 ## Contact
 

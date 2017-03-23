@@ -1,4 +1,6 @@
-require('./index.scss');
+import 'normalize.css';
+
+import './index.scss';
 
 console.log('this is webpack-html-plugin.js');
 
