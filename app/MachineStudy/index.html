@@ -1,22 +1,166 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8" />
-
+  <meta name="renderer" content="webkit">
   <title>机器人学院</title>
 </head>
 
 <body>
-  <div class="w" style="border: 1px solid #0af; padding: 10px;">
+  <div class="w machine-wrapper" style="border: 1px solid #0af; padding: 10px;">
+    <div class="to-top">Top</div>
+
+    <video 
+      controls 
+      width="400" 
+    >
+      <source src="../lib/video/wp-dev-01-05-composer-wp-plugin-update-1196775500.mp4" type="video/mp4" />
+      <track kind="subtitles" src="" srclang="en" label="English">
+    </video>
+
+    <audio src="../lib/audio/赵雷 - 理想.mp3" controls></audio>
+
+    <!-- tab切换 -->
+    <div class="tabs">
+      <ul class="menu clearfix">
+        <li class="">AAA</li>
+          <li class="">BBB</li>
+          <li class="">CCC</li>
+          <li class="on">DDD</li>
+      </ul>
+      <div class="main clearfix">
+          <div class="tab" style="display: none;">AAA</div>
+          <div class="tab" style="display: none;">BBB</div>
+          <div class="tab" style="display: none;">CCC</div>
+          <div class="tab" style="display: block;">DDD</div>
+      </div>
+    </div>
+
+    <!-- 表单验证 -->
+    <form>
+      <div class="form_control">
+        <input class="required sure-email" value="315359131@qq.com" type="text" name="email" data-tip="请输入您的邮箱" data-valid="isNonEmpty||isEmail" data-error="email不能为空||邮箱格式不正确" />
+      </div>
+
+      <div class="form_control">
+        <select class="required" data-valid="isNonEmpty" data-error="省份必填">
+          <option value="">
+            请选择省份
+          </option>
+
+          <option value="001">
+            001
+          </option>
+
+          <option value="002">
+            002
+          </option>
+        </select>
+      </div>
+
+      <div class="form_control">
+        <span class="required" data-valid="isChecked" data-error="性别必选" data-type="radio"><label><input type="radio" name="sex" />男</label> <label><input type="radio" name="sex" />女</label> <label><input type="radio" name="sex" />未知</label></span>
+      </div>
+
+      <div class="form_control">
+        <span class="required" data-valid="isChecked" data-error="标签至少选择一项" data-type="checkbox"><label><input type="checkbox" name="label" />红</label> <label><input type="checkbox" name="label" />绿</label> <label><input type="checkbox" name="label" />蓝</label></span>
+      </div>
+
+      <input type="submit" value="提交" name="">
+    </form>
+
+    
     <h1 class="machine-study">机器人学院</h1>
 
-    <h2><a href="htmls/about.html">关于我们</a></h2>
+    <div id="demo"></div>
 
-    <div class="login">
+    <!-- 弹框 -->
+    <div id="basic" style="display: none;"></div>
+    <a id="basic_open" href="javascript:void(0);">点我看效果</a>
+
+
+    <!-- 登录 -->
+    <div class="login" style="border-radius: 12px;">
       <div class="un-login">
         please login!
       </div>
 
       <div class="had-login hide"></div>
+    </div><!-- swiper banner图 -->
+    <div class="spacer s2"></div>
+    <div id="trigger1" class="spacer s0"></div>
+    <div class="swiper-container swiper-container-banner" id="swiper-container-banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+          Banner 1
+        </div>
+
+        <div class="swiper-slide slide-2">
+          Banner 2
+        </div>
+
+        <div class="swiper-slide slide-3">
+          Banner 3
+        </div>
+      </div><!-- 如果需要分页器 -->
+
+      <div class="swiper-pagination"></div><!-- 如果需要导航按钮 -->
+
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-button-next"></div><!-- 如果需要滚动条 -->
+
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <hr>
+
+    <!-- swiper滚屏介绍 -->
+    <div class="swiper-container swiper-container-box">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+          Box 1
+        </div>
+
+        <div class="swiper-slide slide-2">
+          Box 2
+        </div>
+
+        <div class="swiper-slide slide-3">
+          Box 3
+        </div>
+        <div class="swiper-slide slide-4">
+          Box 4
+        </div>
+        <div class="swiper-slide slide-5">
+          Box 5
+        </div>
+      </div><!-- 如果需要分页器 -->
+
+      <div class="swiper-pagination"></div><!-- 如果需要导航按钮 -->
+
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-button-next"></div><!-- 如果需要滚动条 -->
+
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- 无缝滚动 -->
+    <div class="dowebok">
+      <img src="./imgs/1.jpg" alt="最佳前男友">
+      <img src="./imgs/2.jpg" alt="花千骨">
+      <img src="./imgs/3.jpg" alt="克拉恋人">
+      <img src="./imgs/4.jpg" alt="神犬小七">
+      <img src="./imgs/5.jpg" alt="秀才遇到兵">
+      <img src="./imgs/6.jpg" alt="暗黑者2">
+      <img src="./imgs/7.jpg" alt="二胎时代">
+      <img src="./imgs/8.jpg" alt="鸳鸯佩">
+      <img src="./imgs/9.jpg" alt="少年神探狄仁杰">
+      <img src="./imgs/10.jpg" alt="华胥引">
+    </div>
+
+    <div class="zoom-wrap">
+      <img class="zoomify" src="imgs/bg-pic.jpg" alt="">
     </div>
   </div>
 </body>

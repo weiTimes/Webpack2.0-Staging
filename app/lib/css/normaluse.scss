@@ -1,9 +1,16 @@
+ul,
+li {
+	list-style: none;
+}
+
 a {
 	text-decoration: none;
 	color: #aaa;
+
 	&:hover {
 		color: #f55;
 	}
+
 }
 
 .w {
@@ -19,4 +26,14 @@ a {
 	float: right;
 }
 
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
 
+.clearfix {
+	zoom: 1;
+}

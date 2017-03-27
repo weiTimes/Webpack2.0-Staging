@@ -1,3 +1,33 @@
+.machine-wrapper {
+	position: relative;
+}
+
+// 导航条保持在顶部
+.nav-fixed {
+	width: 1160px;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+// 回到顶部
+.to-top {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	line-height: 60px;
+	cursor: pointer;
+	background: #008;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 999;
+	display: none;
+}
+
 .login {
 	width: 220px;
 	height: 30px;
@@ -7,3 +37,120 @@
 	background: #0aa;
 	cursor: pointer;
 }
+
+// swiper banner
+.swiper-container-banner {
+	margin: 20px;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	font-size: 100px;
+	color: #fff;
+
+	.slide-1 {
+		background: #0af;
+	}
+	.slide-2 {
+		background: #0aa;
+	}
+	.slide-3 {
+		background: #afa;
+	}
+}
+
+// swiper box
+.swiper-container-box {
+	margin: 20px;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	font-size: 70px;
+	color: #fff;
+
+	.swiper-slide {
+		margin: 0 6px;
+	}
+
+	.slide-1 {
+		background: #0af;
+	}
+	.slide-2 {
+		background: #0aa;
+	}
+	.slide-3 {
+		background: #afa;
+	}
+	.slide-4 {
+		background: #faf;
+	}
+	.slide-5 {
+		background: #324cac;
+	}
+}
+
+/**
+ * tab切换
+ */
+.tabs {
+	font-size: 0;
+	text-align: center;
+	width: 600px;
+	margin: 0 auto;
+
+	.menu {
+		padding-left: 0;
+		li {
+			width: 100px;
+			display: inline-block;
+			font-size: 14px;
+			padding-bottom: 1px;
+			cursor: pointer;
+		}
+	}
+	.main {
+		div {
+			width: 600px;
+			height: 160px;
+			line-height: 160px;
+			display: inline-block;
+			font-size: 14px;
+			background: #acd;
+			font-size: 50px;
+			text-align: center;
+
+		}
+	}
+	.on {
+		border-bottom: 1px solid #0af;
+		padding-bottom: 0;
+	}
+}
+
+/**
+ * 无缝滚动
+ */
+
+.dowebok { 
+	margin: 30px auto; 
+	font-size: 0;
+	img {
+		margin-left: 10px;
+		vertical-align: top;
+	}
+}
+
+/**
+ * 图片放大
+ */
+.zoom-wrap { 
+	width: 600px; 
+	margin: auto;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+
+
+
