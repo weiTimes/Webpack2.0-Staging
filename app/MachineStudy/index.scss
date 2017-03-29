@@ -50,12 +50,15 @@
 	.slide-1 {
 		background: #0af;
 	}
+
 	.slide-2 {
 		background: #0aa;
 	}
+
 	.slide-3 {
 		background: #afa;
 	}
+
 }
 
 // swiper box
@@ -74,18 +77,23 @@
 	.slide-1 {
 		background: #0af;
 	}
+
 	.slide-2 {
 		background: #0aa;
 	}
+
 	.slide-3 {
 		background: #afa;
 	}
+
 	.slide-4 {
 		background: #faf;
 	}
+
 	.slide-5 {
 		background: #324cac;
 	}
+
 }
 
 /**
@@ -99,6 +107,7 @@
 
 	.menu {
 		padding-left: 0;
+
 		li {
 			width: 100px;
 			display: inline-block;
@@ -106,7 +115,9 @@
 			padding-bottom: 1px;
 			cursor: pointer;
 		}
+
 	}
+
 	.main {
 		div {
 			width: 600px;
@@ -117,40 +128,42 @@
 			background: #acd;
 			font-size: 50px;
 			text-align: center;
-
 		}
+
 	}
+
 	.on {
 		border-bottom: 1px solid #0af;
 		padding-bottom: 0;
 	}
+
 }
 
 /**
  * 无缝滚动
  */
-
-.dowebok { 
-	margin: 30px auto; 
+.dowebok {
+	margin: 30px auto;
 	font-size: 0;
+
 	img {
 		margin-left: 10px;
 		vertical-align: top;
 	}
+
 }
 
 /**
  * 图片放大
  */
-.zoom-wrap { 
-	width: 600px; 
+.zoom-wrap {
+	width: 600px;
 	margin: auto;
 
 	img {
 		max-width: 100%;
 	}
+
 }
-
-
 
 
